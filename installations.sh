@@ -50,8 +50,8 @@ brew install mongodb-community@4.4 #Install
 brew services start mongodb-community@4.4 #Start
 brew install mongodb/brew/mongodb-database-tools #For future mongodump and mongorestore
 #mongorestore dump/
+brew install --cask mongodb-compass
 say -v Monica "Mongo instalado"
-
 
 
 #Checking everything's up to date
@@ -62,16 +62,18 @@ pip -V
 
 
 #Installing the rest
+brew install --cask visual-studio-code
 brew install --cask slack
 brew install --cask zoomus
 
-brew install --cask mongodb-compass
+#Tableau
 brew install --cask tableau
-brew install --cask homebrew/cask-versions/sequel-pro-nightly
-brew install --cask mysqlworkbench
+
 
 #MySQL
 brew install mysql
+brew install --cask homebrew/cask-versions/sequel-pro-nightly
+brew install --cask mysqlworkbench
 say -v Monica "sícuel instalado"
 
 mysql.server start
