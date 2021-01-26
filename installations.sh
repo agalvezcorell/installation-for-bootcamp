@@ -13,7 +13,6 @@ chsh -s /usr/local/bin/zsh #changes the shell to zsh. It should be already set b
 sed -i 's/robbyrussell/agnoster/g' ~/.zshrc #so that the whole path shows
 say -v Monica "terminal instalada"
 
-
 #1.3. Installing git
 brew install git
 say -v Monica "git instalado"
@@ -26,23 +25,20 @@ git config --global user.email YOUR_EMAIL@DOMAIN.COM
 brew install python3
 say -v Monica "paizon instalado"
 
-
-#1.5. Pip3 & jupyter
+#1.5. Pip3
 pip install --upgrade pip
 say -v Monica "pip instalado"
 
-
+#1.6. Jupyter
 say -v Monica "¿Cuál es la contraseña?"
 sudo python3 -m pip install jupyter
 say -v Monica "yúpiter instalado"
 
-
-#1.6. Miniconda
+#1.7. Miniconda
 brew install --cask miniconda
 say -v Monica "miniconda instalado"
 
-
-#1.7. Checking everything's up to date
+#1.8. Checking everything's up to date
 git --version
 brew -v
 python3 --version
