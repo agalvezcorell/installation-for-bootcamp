@@ -1,4 +1,4 @@
-########## GIT, PYTHON, JUPYTER, PIP & HOMEBREW ##########
+########## 1. GIT, PYTHON, JUPYTER, PIP, HOMEBREW & iTerm2 ##########
 
 #Installing Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -10,6 +10,7 @@ brew install --cask iterm2
 brew install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" #install zsh
 chsh -s /usr/local/bin/zsh #changes the shell to zsh. It should be already set by the previous line, but just to be sure.
+sed -i 's/robbyrussell/agnoster/g' ~/.zshrc #so that the whole path shows
 say -v Monica "terminal instalada"
 
 
@@ -48,26 +49,26 @@ python3 --version
 pip -V
 
 
-########## DEPLOYMENT ##########
+########## 2. DEPLOYMENT ##########
 
 #Heroku
 brew tap heroku/brew && brew install heroku
 say -v Monica "Heroku instalado"
 
-########## VISUALIZATION ##########
+########## 3. VISUALIZATION ##########
 
 #Tableau
 brew install --cask tableau
 say -v Monica "tabló instalado"
 
-########## MISCELLANEOUS ##########
+########## 4. MISCELLANEOUS ##########
 
 #Installing the rest
 brew install --cask visual-studio-code
 brew install --cask slack
 brew install --cask zoomus
 
-########## DATABASES ##########
+########## 5. DATABASES ##########
 
 #MongoDB
 brew tap mongodb/brew
