@@ -1,11 +1,11 @@
 ########## 1. GIT, PYTHON, JUPYTER, PIP, HOMEBREW & iTerm2 ##########
 
-#Installing Homebrew
+#1.1. Installing Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew update
 say -v Monica "bru instalado"
 
-#Installing zsh + ohmyzsh + iterm2
+#1.2. Installing zsh + ohmyzsh + iterm2
 brew install --cask iterm2
 brew install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" #install zsh
@@ -14,20 +14,20 @@ sed -i 's/robbyrussell/agnoster/g' ~/.zshrc #so that the whole path shows
 say -v Monica "terminal instalada"
 
 
-#Installing git
+#1.3. Installing git
 brew install git
 say -v Monica "git instalado"
 
-#Linking Git with Github
+#1.3.1. Linking Git with Github
 git config --global user.name “YOUR_GITHUB_USERNAME”;
 git config --global user.email YOUR_EMAIL@DOMAIN.COM
 
-#Python
+#1.4. Python
 brew install python3
 say -v Monica "paizon instalado"
 
 
-#Pip3 & jupyter
+#1.5. Pip3 & jupyter
 pip install --upgrade pip
 say -v Monica "pip instalado"
 
@@ -37,12 +37,12 @@ sudo python3 -m pip install jupyter
 say -v Monica "yúpiter instalado"
 
 
-#Miniconda
+#1.6. Miniconda
 brew install --cask miniconda
 say -v Monica "miniconda instalado"
 
 
-#Checking everything's up to date
+#1.7. Checking everything's up to date
 git --version
 brew -v
 python3 --version
@@ -51,26 +51,26 @@ pip -V
 
 ########## 2. DEPLOYMENT ##########
 
-#Heroku
+#2.1. Heroku
 brew tap heroku/brew && brew install heroku
 say -v Monica "Heroku instalado"
 
 ########## 3. VISUALIZATION ##########
 
-#Tableau
+#3.1. Tableau
 brew install --cask tableau
 say -v Monica "tabló instalado"
 
 ########## 4. MISCELLANEOUS ##########
 
-#Installing the rest
+#4.1. Installing the rest
 brew install --cask visual-studio-code
 brew install --cask slack
 brew install --cask zoomus
 
 ########## 5. DATABASES ##########
 
-#MongoDB
+#5.1. MongoDB
 brew tap mongodb/brew
 brew install mongodb-community@4.4 #Install
 brew services start mongodb-community@4.4 #Start
@@ -79,12 +79,13 @@ brew install mongodb/brew/mongodb-database-tools #For future mongodump and mongo
 brew install --cask mongodb-compass
 say -v Monica "Mongo instalado"
 
-#MySQL
+#5.2. MySQL
 brew install mysql
 brew install --cask homebrew/cask-versions/sequel-pro-nightly
 brew install --cask mysqlworkbench
 say -v Monica "sícuel instalado"
 
+#5.2.1. MySQL password
 mysql.server start
 sudo mysql -u root
 USE mysql;
