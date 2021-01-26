@@ -1,7 +1,14 @@
-### Installations for mac ###
+# Installations for mac ###
 
-First, make sure you change your github username and email
+This is a list of commands for installing everything you might need for the Ironhack data analytics bootcamp. 
 
-Second, change the MySQL password at the end of the file
+- First, make sure you change your **github** username and email
 
-Third, add any other GUI you need with brew install --cask program
+- Second, change the **MySQL** password at the end of the file
+
+- Third, add any other **GUI** you need with: 
+```bash
+brew install --cask notion
+```
+
+Now, run the bash script. You will probably need to grant permissions.

@@ -19,7 +19,9 @@ git config --global user.email YOUR_EMAIL@DOMAIN.COM
 brew install python3
 
 #Pip3 & jupyter
+say -v Monica "¿Cuál es la contraseña del equipo?"
 sudo -H pip3 install --upgrade pip
+say -v Monica "¿De nuevo, ¿la contraseña?"
 sudo python3 -m pip install jupyter
 
 #Miniconda
