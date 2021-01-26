@@ -60,7 +60,6 @@ brew -v
 python3 --version
 pip -V
 
-
 #Installing the rest
 brew install --cask visual-studio-code
 brew install --cask slack
@@ -68,7 +67,6 @@ brew install --cask zoomus
 
 #Tableau
 brew install --cask tableau
-
 
 #MySQL
 brew install mysql
