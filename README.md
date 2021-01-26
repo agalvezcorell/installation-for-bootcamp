@@ -1,4 +1,4 @@
-# Installations for mac
+### Installations for mac ###
 
 First, make sure you change your github username and email
 
