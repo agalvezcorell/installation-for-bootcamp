@@ -53,6 +53,9 @@ brew install mongodb/brew/mongodb-database-tools #For future mongodump and mongo
 brew install --cask mongodb-compass
 say -v Monica "Mongo instalado"
 
+#Tableau
+brew install --cask tableau
+say -v Monica "tabló instalado"
 
 #Checking everything's up to date
 git --version
@@ -65,8 +68,6 @@ brew install --cask visual-studio-code
 brew install --cask slack
 brew install --cask zoomus
 
-#Tableau
-brew install --cask tableau
 
 #MySQL
 brew install mysql
