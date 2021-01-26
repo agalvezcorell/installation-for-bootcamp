@@ -20,9 +20,14 @@ brew install python3
 
 #Pip3 & jupyter
 say -v Monica "¿Cuál es la contraseña del equipo?"
-sudo -H pip3 install --upgrade pip
+pip install --upgrade pip
+
 say -v Monica "¿De nuevo, ¿la contraseña?"
 sudo python3 -m pip install jupyter
+
+pip install --upgrade pip
+
+
 
 #Miniconda
 brew install --cask miniconda
