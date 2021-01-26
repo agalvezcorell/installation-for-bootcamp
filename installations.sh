@@ -1,3 +1,5 @@
+########## GIT, PYTHON, JUPYTER, PIP & HOMEBREW ##########
+
 #Installing Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew update
@@ -39,10 +41,33 @@ brew install --cask miniconda
 say -v Monica "miniconda instalado"
 
 
+#Checking everything's up to date
+git --version
+brew -v
+python3 --version
+pip -V
+
+
+########## DEPLOYMENT ##########
+
 #Heroku
 brew tap heroku/brew && brew install heroku
 say -v Monica "Heroku instalado"
 
+########## VISUALIZATION ##########
+
+#Tableau
+brew install --cask tableau
+say -v Monica "tabló instalado"
+
+########## MISCELLANEOUS ##########
+
+#Installing the rest
+brew install --cask visual-studio-code
+brew install --cask slack
+brew install --cask zoomus
+
+########## DATABASES ##########
 
 #MongoDB
 brew tap mongodb/brew
@@ -52,22 +77,6 @@ brew install mongodb/brew/mongodb-database-tools #For future mongodump and mongo
 #mongorestore dump/
 brew install --cask mongodb-compass
 say -v Monica "Mongo instalado"
-
-#Tableau
-brew install --cask tableau
-say -v Monica "tabló instalado"
-
-#Checking everything's up to date
-git --version
-brew -v
-python3 --version
-pip -V
-
-#Installing the rest
-brew install --cask visual-studio-code
-brew install --cask slack
-brew install --cask zoomus
-
 
 #MySQL
 brew install mysql
