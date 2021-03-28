@@ -20,6 +20,7 @@ say -v Monica "git instalado"
 #1.3.1. Linking Git with Github
 git config --global user.name “YOUR_GITHUB_USERNAME”;
 git config --global user.email YOUR_EMAIL@DOMAIN.COM
+git config --global credential.helper store #this will make sure you don't have to input your password every time you commit
 
 #1.4. Python
 brew install python3
